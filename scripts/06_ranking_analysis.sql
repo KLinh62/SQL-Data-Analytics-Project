@@ -29,7 +29,7 @@ FROM (
     SELECT
         p.product_name,
         SUM(f.sales_amount) AS total_revenue,
-        RANK() OVER (ORDER BY SUM(f.sales_amount) DESC) AS rank_products
+        RANK() OVER (ORDER BY SUM(f.sales_amount) DESC) AS rank_products -- OR: use ROW_NUMBER() fn (different ranking logic)
     FROM gold.fact_sales AS f
     LEFT JOIN gold.dim_products AS p
         ON p.product_key = f.product_key
