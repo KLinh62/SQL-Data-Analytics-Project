@@ -48,6 +48,6 @@ SELECT
         WHEN current_sales - LAG(current_sales) OVER (PARTITION BY product_name ORDER BY order_year) > 0 THEN 'Increase'
         WHEN current_sales - LAG(current_sales) OVER (PARTITION BY product_name ORDER BY order_year) < 0 THEN 'Decrease'
         ELSE 'No Change'
-    END AS py_change
+    END AS py_change -- Flag the change compared to the previous year
 FROM yearly_product_sales
 ORDER BY product_name, order_year;
