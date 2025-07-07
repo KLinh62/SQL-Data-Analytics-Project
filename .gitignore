@@ -1,0 +1,46 @@
+# -------------------------
+# DATA ANALYTICS PROJECT
+# -------------------------
+
+# Ignore all CSVs except in /data
+*.csv
+!data/*.csv
+
+# Ignore Excel and other exports
+*.xlsx
+*.xls
+*.xlsm
+
+# Ignore Power BI autosave and temp files
+*.pbix~
+*.tmp
+~$*
+
+# Keep only main report file in /reports
+!reports/*.pbix
+
+# Ignore backup files
+*.bak
+*.old
+*.save
+
+# Ignore system & IDE files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+
+# VSCode and Jupyter config
+.vscode/
+.ipynb_checkpoints/
+
+# Python virtual env (if used)
+venv/
+.env/
+__pycache__/
+
+# Node or R config (just in case)
+node_modules/
+.Rhistory
+.RData
