@@ -12,6 +12,26 @@ The focus lies in:
 - Analyzing **sales trends** across time
 
 ---
+## 📈 Executive Summary & Insights
+🔹 **Customer Insights**
+
+- A small % of customers contribute the majority of revenue (Pareto pattern)
+
+- Loyal customers place more frequent and higher-value orders
+
+🔹 **Product Insights**
+
+- Electronics and accessories dominate in revenue
+
+- Seasonality impacts certain product categories significantly
+
+🔹 **Sales Trends**
+
+- Revenue spikes observed during holiday months
+
+- AOV steadily increasing — indicates successful upselling strategies
+
+---
 ## 🗂️ Data Structure Overview
 The star schema design enhances performance for BI tools as well as allows efficient filtering, aggregation, and analysis by product and customer dimensions. Below is the entity relationship diagram:
 
@@ -92,7 +112,7 @@ Building upon the EDA, more complex SQL queries were developed to dig deeper int
 
 ----
 
-### 🔗 Power BI Integration
+## 🔗 Phase 3: Power BI Integration
 
 Each query aligns with a specific visual on the dashboard. Here's how they connect:
 
