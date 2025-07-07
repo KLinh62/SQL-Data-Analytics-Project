@@ -17,10 +17,10 @@ The star schema design enhances performance for BI tools as well as allows effic
 
 ![data-model](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_model.png)
 
-Links:
-
-- [Datasets](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/datasets): Access to the project dataset (.csv and .bak files).
-- [Data Catalog](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md): A comprehensive description of the datasets used in this analytical project, which were derived from the Gold layer of the [SQL Data Warehouse Project](https://github.com/KLinh62/SQL-Data-Warehouse-Project).
+> Links:
+>
+> - [Datasets](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/datasets): Access to the project dataset (.csv and .bak files).
+> - [Data Catalog](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md): A comprehensive description of the datasets used in this analytical project, which were derived from the Gold layer of the [🛄SQL Data Warehouse Project](https://github.com/KLinh62/SQL-Data-Warehouse-Project).
 
 ### Data Quality Checks
 
@@ -31,9 +31,9 @@ Basic validation tests were performed using SQL to ensure data quality:
 - **Duplications**: Checked for duplicate records in `orders` and `order_items`
 - **Joins Testing**: Validated foreign key relationships among tables
 
-> **Note**: All required data validation and quality assurance (nulls, referential integrity, data types, duplicates, etc.) were already conducted during the **Silver** and **Gold Layer** development in the [SQL Data Warehouse Project](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).  
->  
-> This ensures the data input for this project is clean, reliable, and analysis-ready.
+> **Note**: All required data validation and quality assurance (nulls, referential integrity, data types, duplicates, etc.) were already conducted during the **Silver** and **Gold Layer** development in the SQL Data Warehouse Project's [📁tests folder](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).  
+
+This ensures the data input for this project is clean, reliable, and analysis-ready.
 
 ---
 
@@ -51,6 +51,8 @@ Basic validation tests were performed using SQL to ensure data quality:
 
 This phase involves delving into the datasets to understand their characteristics, identify patterns, and uncover initial insights. A total of **12 SQL scripts** are developed to drive both **Exploratory Data Analysis (EDA)** and **Advanced Business Analytics**. These queries are executed using Microsoft SQL Server and the results exported for Power BI reporting.
 
+> [Link to SQL Scripts](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/scripts)
+
 Below is the mind map of both Exploratory Data Analysis & Advanced Business Analytics processes:
 ![data-analytics-steps](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/blob/main/docs/data-analytics-steps.png)
 
@@ -58,106 +60,36 @@ Below is the mind map of both Exploratory Data Analysis & Advanced Business Anal
 
 SQL was extensively used for foundational understanding of the data. This enabled easy cleaning, profiling, and modelling of the data.
 
-This phase involved delving into the datasets to understand their characteristics, identify patterns, and uncover initial insights. SQL queries were extensively used for:
+1. **Data Exploration**: Initial overview of data structure (the list of tables and their schemas), inspecting the columns and metadata for specific tables.
 
-1. Data Exploration: Initial overview of data, checking for completeness, unique values, and basic distributions across all tables.
+2. **Dimension Exploration**: Exploring the attributes within dimension tables (e.g., customer demographics, product categories) to understand their distinct values and impact.
 
-2. Dimension Exploration: Analyzing the attributes within dimension tables (e.g., customer demographics, product categories) to understand their distinct values and impact.
+3. **Date Exploration**: Examining temporal boundaries of key data points, such as sales date boundaries or customer age range.
 
-3. Date Exploration: Examining temporal aspects of the data, such as sales over different dates, months, or years, to identify trends or anomalies.
+4. **Measures Exploration**: Calculating the aggregated metrics (e.g., ranges, totals, averages) of key measures like sales_amount, quantity, and price.  Generate a Report that shows all key metrics of the business.
 
-4. Measures Exploration: Understanding the range, sum, average, and other statistical properties of key measures like sales_amount, quantity, and price.
+5. **Magnitude Analysis**: Quantifying the data and group the results by specific dimensions (e.g., Compute total revenue, customer counts, and product volumes, then measure the metrics magnitude by region, brand, or customer type)
 
-5. Magnitude Analysis: Quantifying the size or scale of various data points (e.g., total sales by region, total customers).
-
-6. Ranking Analysis: Identifying top N or bottom N entities based on specific measures (e.g., top-selling products, highest-value customers).
-
-
-
-
-
-
-1. **Data Exploration**  
-   - Reviewed data completeness, null values, unique identifiers  
-   - Profiled numeric distributions, text lengths, and cardinality
-
-2. **Dimension Exploration**  
-   - Examined customer types, locations, and product categories  
-   - Identified which segments had the highest order volumes
-
-3. **Date Exploration**  
-   - Aggregated sales by day, week, month, and year  
-   - Uncovered seasonal trends and holiday-related spikes
-
-4. **Measures Exploration**  
-   - Calculated statistics on `quantity`, `price`, `total_sales_amount`  
-   - Identified outliers and pricing anomalies
-
-5. **Magnitude Analysis**  
-   - Computed total revenue, customer counts, and product volumes  
-   - Measured scale of business by region, brand, or customer type
-
-6. **Ranking Analysis**  
-   - Extracted top-N products, customers, and categories  
-   - Enabled leaderboard visualizations in Power BI
+6. **Ranking Analysis**: Identifying top N or bottom N entities based on specific measures (e.g., top-selling products, highest-value customers).
 
 ---
 
 ### 📈 Phase 2: Advanced Analytics with SQL
 
-More sophisticated queries were developed to dig deeper into business performance and customer behavior:
+Building upon the EDA, more complex SQL queries were developed to dig deeper into business performance and customer behavior.
 
-7. **Change-Over-Time Trends**  
-   - Compared monthly and quarterly metrics year-over-year  
-   - Visualized growth momentum and cyclicality
+7. **Change-Over-Time Trends**: Analyzing how key metrics evolve over time (e.g., monthly sales growth, product performance across quarters), identifying seasonality for time-series analysis.
 
-8. **Cumulative Analysis**  
-   - Computed year-to-date sales and cumulative customer acquisition  
-   - Enabled running total charts in Power BI
+8. **Cumulative Analysis**: Calculating running totals or cumulative sums for key metrics (e.g., cumulative sales over the year) to track performance over time cumulatively. Useful for growth analysis or identifying long-term trends.
 
-9. **Performance Analysis**  
-   - Evaluated profit margins, unit economics, and category-level contribution  
-   - Provided KPIs for product and customer profitability
+9. **Performance Analysis**: Evaluating the performance of products, customers, or regions over time (e.g., sales performance against targets, product line profitability, category-level contribution). Useful for benchmarking and identifying high-performing entities, as well as tracking yearly trends and growth.
 
-10. **Part-to-Whole Analysis**  
-   - Calculated category-level revenue share  
-   - Supported donut/pie and stacked column charts
+10. **Part-to-Whole Analysis**: Determining the contribution of individual metrics across dimensions or time periods to evaluate differences between categories (e.g., percentage of total sales by each product category). Useful for A/B testing or regional comparisons. > Supported donut/pie and stacked column charts
 
-11. **Data Segmentation**  
-   - Clustered customers by frequency, monetary value, and recency  
-   - Enabled cohort and RFM-style segmentation charts
+11. **Data Segmentation**: Grouping data into meaningful categories to reveal insights within specific segments (i.e., group customers by spending behavior, group products by cost ranges). Used for customer segmentation, product categorization, or regional analysis.
 
-12. **Reporting for Power BI**  
-   - Final SQL outputs (aggregated, clean, enriched) were exported as `.csv` files  
-   - These were imported into Power BI to serve as **data sources** for interactive dashboards
+12. **Reporting**: Generating two consolidated views of key metrics, behaviors, and performance indicators for customers and products, enabling data-driven decision-making. These SQL Views are then exported as .csv files, and imported into PowerBI for to serve as **data sources** for interactive dashboards.
 
----
-
-### Table Mapping: SQL Scripts to Business Goals
-Here’s a mapping table that explains the purpose of each SQL file:
-
-| Script File                       | Description                                                  |
-|----------------------------------|--------------------------------------------------------------|
-| `00_init_database.sql`           | Initializes the DataWarehouseAnalytics database and creates the gold schema |
-| `01_data_exploration.sql`        | Basic data profiling: null checks, row counts, distributions |
-| `02_dimension_exploration.sql`   | Explore customer/product attributes and categories           |
-| `03_date_exploration.sql`        | Identify trends by day, month, and year                      |
-| `04_ranking_analysis.sql`        | Top-N products, customers, and categories                    |
-| `05_measures_analysis.sql`       | Summary stats: min, max, avg, std of sales metrics           |
-| `06_magnitude_analysis.sql`      | Aggregate totals by segment: sales, quantity, revenue        |
-| `07_change_over_time.sql`        | Sales growth over time: MoM, QoQ                             |
-| `08_cumulative_sales.sql`        | Running totals: YTD, MTD cumulative metrics                  |
-| `09_performance_analysis.sql`    | Evaluate profitability and sales effectiveness               |
-| `10_part_to_whole_analysis.sql`  | % contribution by product category or brand                  |
-| `11_customer_segmentation.sql`   | Customer grouping by frequency, value, or recency            |
-| `12_final_reporting_view.sql`    | Final reporting table for Power BI import                    |
-
-### 📤 Usage
-
-- Run scripts in order from `00` to `12`, or selectively for specific analysis needs.
-- Export results from `12_final_reporting_view.sql` as `.csv` for Power BI.
-- Join with dimensions in Power BI for full dashboard interactivity.
-- 
 ----
 
 ### 🔗 Power BI Integration
