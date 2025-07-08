@@ -1,4 +1,5 @@
 # Retail Data Analytics Project with SQL and Power BI: Customer, Product & Sales Insights 
+
 This project establishes a complete analytics pipeline for retail data, utilizing SQL for robust data analysis and Power BI for dynamic visualization. The objective is to generate actionable insights into customer behavior, product performance, and sales trends, thereby empowering strategic, data-driven decision-making. This project leverages a comprehensive suite of SQL scripts to perform everything from initial data exploration to advanced analytics and final reporting.
 
 > - **SQL Focus**: Robust data preparation, exploration, and advanced analytical query development within a relational database.
@@ -7,8 +8,35 @@ This project establishes a complete analytics pipeline for retail data, utilizin
 
 ---
 
-## 📘 Project Background
-This project explores a retail sales dataset using SQL for data cleaning and analysis, and Power BI for visualization. The goal is to empower decision-makers with detailed, real-time insights to track KPIs on customer behaviour, product performance, and discover growth opportunities.
+## 📦 Project Background
+
+This Data Analytics Project is built for a simulated retail company aiming to improve decision-making across customer behavior, product performance, and sales trends.
+
+The company has accumulated large volumes of sales data but lacked proper analytical processing and visualization. This project leverages SQL for data preparation and Power BI for business intelligence reporting, uncovering patterns that support growth and operational improvements.
+
+Key business metrics and insights are explored through:
+
+- **Sales Trends Analysis**: Understand revenue performance over time, order quantity, and seasonality.
+
+- **Product-Level Insights**: Identify top-selling and underperforming products, and analyze category revenue contribution.
+
+- **Customer Behavior Analysis**: Segment customers by total spend and purchase frequency to determine loyalty and high-value groups.
+
+- **Geographical Analysis**: Explore performance by region, city, or customer location.
+
+- **Average Order Value (AOV)**: Measure revenue efficiency per transaction.
+
+> *Links*:
+> 
+> The interactive Power BI dashboard can be downloaded [here]()
+> 
+> The SQL queries utilized to perform ETL on the raw data to produce a clean, enriched, and analysis-ready dataset can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).
+> 
+> The SQL queries utilized to inspect and perform quality checks (performed in Silver and Gold Layer) can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).
+> 
+> Targeted SQL queries regarding various business questions can be found [here](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/scripts).
+
+---
 
 The focus lies in:
 - Identifying **top-performing products**
@@ -16,48 +44,19 @@ The focus lies in:
 - Analyzing **sales trends** across time
 
 ---
-## 📈 Executive Summary & Insights
-- **Customer Insights**
+## 🗂️ Data Structure & Quality Checks
+For this analysis project, the retail dataset utilized was derived from the Gold Layer of the [SQL Data Warehouse Project](https://github.com/KLinh62/SQL-Data-Warehouse-Project). The dataset consists of 3 tables: dim_customers, dim_products, and fact_sales, with a total of 108,127 records in the fact table. 
 
-   - A small % of customers contribute the majority of revenue (Pareto pattern)
-
-   - Loyal customers place more frequent and higher-value orders
-
-- **Product Insights**
-
-   - Electronics and accessories dominate in revenue
-
-   - Seasonality impacts certain product categories significantly
-
-- **Sales Trends**
-
-   - Revenue spikes observed during holiday months
-
-   - AOV steadily increasing — indicates successful upselling strategies
-
----
-## 🗂️ Data Structure Overview
-The star schema design enhances performance for BI tools as well as allows efficient filtering, aggregation, and analysis by product and customer dimensions. Below is the entity relationship diagram:
+The data model follows a star schema design to enhance performance for BI tools later. Below is the entity relationship diagram:
 
 ![data-model](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_model.png)
 
-> Links:
->
 > - [Datasets](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/datasets): Access to the project dataset (.csv and .bak files).
-> - [Data Catalog](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md): A comprehensive description of the datasets used in this analytical project, which were derived from the Gold layer of the [🛄SQL Data Warehouse Project](https://github.com/KLinh62/SQL-Data-Warehouse-Project).
+> - [Data Catalog](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md): A comprehensive description of the datasets used in this analytical project.
 
-### Data Quality Checks
+Prior to the beginning of this analysis project, a variety of checks were conducted for data validation and quality assurance. It ensures the data input for this project is clean, reliable, and analysis-ready.  
 
-Basic validation tests were performed using SQL to ensure data quality:
-
-- **Null Checks**: Verified missing values across primary fields
-- **Data Types**: Ensured consistency (e.g., dates, prices, quantities)
-- **Duplications**: Checked for duplicate records
-- **Joins Testing**: Validated foreign key relationships among tables
-
-> **Note**: All required data validation and quality assurance (nulls, referential integrity, data types, duplicates, etc.) were already conducted during the **Silver** and **Gold Layer** development in the SQL Data Warehouse Project's [📁tests folder](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).  
-
-This ensures the data input for this project is clean, reliable, and analysis-ready.
+> - The SQL queries utilized to inspect and perform quality checks can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests). 
 
 ---
 
@@ -69,13 +68,12 @@ This ensures the data input for this project is clean, reliable, and analysis-re
 | Power BI  | Dashboarding and reporting          |
 | GitHub    | Version control and collaboration   |
 
-
 ---
 ## 🧠 Data Analysis & Visualization Steps
 
 This project involves delving into the datasets to understand their characteristics, identify patterns, and uncover initial insights. A total of **12 SQL scripts** are developed to drive both **Exploratory Data Analysis (EDA)** and **Advanced Business Analytics**. These queries are executed using Microsoft SQL Server and the results exported for Power BI reporting.
 
-> [Link to SQL Scripts](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/scripts)
+> The SQL queries for data analysis can be found [here](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/scripts)
 
 Below is the mind map of both Exploratory Data Analysis & Advanced Business Analytics processes:
 ![data-analytics-steps](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/blob/main/docs/data-analytics-steps.png)
