@@ -16,15 +16,9 @@ The company has accumulated large volumes of sales data but lacked proper analyt
 
 Key business metrics and insights are explored through:
 
-- **Sales Trends Analysis**: Understand revenue performance over time, order quantity, and seasonality.
-
-- **Product-Level Insights**: Identify top-selling and underperforming products, and analyze category revenue contribution.
-
-- **Customer Behavior Analysis**: Segment customers by total spend and purchase frequency to determine loyalty and high-value groups.
-
-- **Geographical Analysis**: Explore performance by region, city, or customer location.
-
-- **Average Order Value (AOV)**: Measure revenue efficiency per transaction.
+- Identifying **top-performing products**
+- Understanding **customer purchasing behavior**
+- Analyzing **sales trends** across time
 
 > *Links*:
 > 
@@ -35,13 +29,6 @@ Key business metrics and insights are explored through:
 > The SQL queries utilized to inspect and perform quality checks (performed in Silver and Gold Layer) can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).
 > 
 > Targeted SQL queries regarding various business questions can be found [here](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/scripts).
-
----
-
-The focus lies in:
-- Identifying **top-performing products**
-- Understanding **customer purchasing behavior**
-- Analyzing **sales trends** across time
 
 ---
 ## 🗂️ Data Structure & Quality Checks
