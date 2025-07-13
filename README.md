@@ -1,4 +1,4 @@
-# Retail Data Analytics Project with SQL and Power BI: Customer, Product & Sales Insights 
+# SQL Retail Data Analytics Project with SQL anh Power BI
 
 This project establishes a complete analytics pipeline for retail data, utilizing SQL for robust data analysis and Power BI for dynamic visualization. The objective is to generate actionable insights into customer behavior, product performance, and sales trends, thereby empowering strategic, data-driven decision-making. This project leverages a comprehensive suite of SQL scripts to perform everything from initial data exploration to advanced analytics and final reporting.
 
