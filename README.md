@@ -75,7 +75,7 @@ Building upon the EDA, more complex SQL queries were developed to dig deeper int
 
 11. **Data Segmentation**: Grouping data into meaningful categories to reveal insights within specific segments (i.e., group customers by spending behavior, group products by cost ranges). Used for customer segmentation, product categorization, or regional analysis.
 
-12. **Reporting**: Generating two consolidated views of key metrics, behaviors, and performance indicators for customers and products, enabling data-driven decision-making. These SQL Views are then exported as .csv files, and imported into PowerBI for to serve as **data sources** for interactive dashboards.
+12. **Reporting**: Generating two consolidated views of key metrics, behaviors, and performance indicators for customers and products, enabling data-driven decision-making. These SQL Views cab then be exported as .csv files, or imported directly into PowerBI as **data sources** for building interactive dashboards.
 
 ---
 
