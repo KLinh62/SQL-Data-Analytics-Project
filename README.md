@@ -12,8 +12,6 @@ This Data Analytics Project is built for a simulated retail company aiming to im
 
 The company has accumulated large volumes of sales data but lacked proper analytical processing and visualization. This project leverages SQL for data preparation, uncovering patterns that support growth and operational improvements.
 
-> *Links*:
-> 
 > The SQL queries utilized to perform ETL on the raw data to produce a clean, enriched, and analysis-ready dataset can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/scripts).
 > 
 > The SQL queries utilized to inspect and perform quality checks (performed in Silver and Gold Layer) can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).
@@ -28,8 +26,8 @@ The data model follows a star schema design to enhance performance for BI tools 
 
 ![data-model](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_model.png)
 
-> - [Datasets](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/datasets): Access to the project dataset (.csv and .bak files).
-> - [Data Catalog](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md): A comprehensive description of the datasets used in this analytical project.
+> [Datasets](https://github.com/KLinh62/SQL-PowerBI-Data-Analytics-Project/tree/main/datasets): Access to the project dataset (.csv and .bak files).
+> [Data Catalog](https://github.com/KLinh62/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md): A comprehensive description of the datasets used in this analytical project.
 
 Prior to the beginning of this analysis project, a variety of checks were conducted for data validation and quality assurance. It ensures the data input for this project is clean, reliable, and analysis-ready.  
 
