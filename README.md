@@ -1,10 +1,8 @@
 # SQL Retail Data Analytics Project
 
-This project establishes a complete analytics pipeline for retail data, utilizing SQL for robust data analysis and Power BI for dynamic visualization. The objective is to generate actionable insights into customer behavior, product performance, and sales trends, thereby empowering strategic, data-driven decision-making. This project leverages a comprehensive suite of SQL scripts and Power BI to perform everything from initial data exploration to advanced analytics and final reporting.
+This project establishes a complete analytics pipeline for retail data, utilizing SQL for robust data analysis. The objective is to generate actionable insights into customer behavior, product performance, and sales trends, thereby empowering strategic, data-driven decision-making. This project leverages a comprehensive suite of SQL scripts to perform everything from initial data exploration to advanced analytics and final reporting.
 
 > - **SQL Focus**: Robust data preparation, exploration, and advanced analytical query development within a relational database.
-> 
-> - **BI Focus**: Data-driven decisions in customer engagement, product optimization, and revenue growth.
 
 ---
 
@@ -12,17 +10,9 @@ This project establishes a complete analytics pipeline for retail data, utilizin
 
 This Data Analytics Project is built for a simulated retail company aiming to improve decision-making across customer behavior, product performance, and sales trends.
 
-The company has accumulated large volumes of sales data but lacked proper analytical processing and visualization. This project leverages SQL for data preparation and Power BI for business intelligence reporting, uncovering patterns that support growth and operational improvements.
-
-Key business metrics and insights are explored through:
-
-- Identifying **top-performing products**
-- Understanding **customer purchasing behavior**
-- Analyzing **sales trends** across time
+The company has accumulated large volumes of sales data but lacked proper analytical processing and visualization. This project leverages SQL for data preparation, uncovering patterns that support growth and operational improvements.
 
 > *Links*:
-> 
-> The interactive Power BI dashboard can be downloaded [here]()
 > 
 > The SQL queries utilized to perform ETL on the raw data to produce a clean, enriched, and analysis-ready dataset can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/scripts).
 > 
@@ -44,16 +34,6 @@ The data model follows a star schema design to enhance performance for BI tools 
 Prior to the beginning of this analysis project, a variety of checks were conducted for data validation and quality assurance. It ensures the data input for this project is clean, reliable, and analysis-ready.  
 
 > - The SQL queries utilized to inspect and perform quality checks can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests). 
-
----
-
-## 🛠 Tools & Technologies
-
-| Tool      | Purpose                             |
-|-----------|-------------------------------------|
-| SQL       | Data warehouse structure, querying  |
-| Power BI  | Dashboarding and reporting          |
-| GitHub    | Version control and collaboration   |
 
 ---
 ## 🧠 Data Analysis & Visualization Steps
@@ -99,37 +79,7 @@ Building upon the EDA, more complex SQL queries were developed to dig deeper int
 
 12. **Reporting**: Generating two consolidated views of key metrics, behaviors, and performance indicators for customers and products, enabling data-driven decision-making. These SQL Views are then exported as .csv files, and imported into PowerBI for to serve as **data sources** for interactive dashboards.
 
-----
-
-### 🔗 Phase 3: Building dashboards with Power BI
-
-Each query aligns with a specific visual on the dashboard. Here's how they connect:
-
-| SQL Query Purpose          | Power BI Visual Example                     |
-|---------------------------|---------------------------------------------|
-| Top Products by Revenue   | Bar chart: Top 10 products                  |
-| Monthly Sales Trend       | Line chart: Revenue over time               |
-| Customer Segments         | Table: High-value vs low-value customers    |
-| Category Contribution     | Donut chart: Sales % by product category    |
-| Running Total Sales       | Area chart: Cumulative monthly revenue      |
-| Regional Performance      | Map: Sales volume by country or region      |
-| Repeat Purchase Behavior  | Matrix or bar chart: Frequency bands        |
-
-> All `.csv` outputs are stored in `/data/dashboard-inputs/` and referenced in the Power BI `.pbix` file under `/reports/`.
-
-### ⚙️ Automation Potential
-
-This SQL + Power BI pipeline is highly automatable. With a data warehouse and tools like Power BI Gateway or Python scripts, the refresh cycle can be scheduled for near real-time reporting.
-
 ---
-
-## 🧑‍💻 Author
-
-**Nguyen Khanh Linh**  
-📧 nklinh.620@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/khánh-linh-nguyễn-346115176)
-
-
 
 ## 🌟 About Me
 
