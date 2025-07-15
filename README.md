@@ -31,7 +31,7 @@ The data model follows a star schema design to enhance performance for BI tools 
 
 Prior to the beginning of this analysis project, a variety of checks were conducted for data validation and quality assurance. It ensures the data input for this project is clean, reliable, and analysis-ready.  
 
-> - The SQL queries utilized to inspect and perform quality checks can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests). 
+> The SQL queries utilized to inspect and perform quality checks can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests). 
 
 ---
 ## 🧠 Data Analysis & Visualization Steps
