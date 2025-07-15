@@ -1,6 +1,6 @@
 # SQL Retail Data Analytics Project
 
-This project establishes a complete analytics pipeline for retail data, utilizing SQL for robust data analysis and Power BI for dynamic visualization. The objective is to generate actionable insights into customer behavior, product performance, and sales trends, thereby empowering strategic, data-driven decision-making. This project leverages a comprehensive suite of SQL scripts to perform everything from initial data exploration to advanced analytics and final reporting.
+This project establishes a complete analytics pipeline for retail data, utilizing SQL for robust data analysis and Power BI for dynamic visualization. The objective is to generate actionable insights into customer behavior, product performance, and sales trends, thereby empowering strategic, data-driven decision-making. This project leverages a comprehensive suite of SQL scripts and Power BI to perform everything from initial data exploration to advanced analytics and final reporting.
 
 > - **SQL Focus**: Robust data preparation, exploration, and advanced analytical query development within a relational database.
 > 
@@ -24,7 +24,7 @@ Key business metrics and insights are explored through:
 > 
 > The interactive Power BI dashboard can be downloaded [here]()
 > 
-> The SQL queries utilized to perform ETL on the raw data to produce a clean, enriched, and analysis-ready dataset can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).
+> The SQL queries utilized to perform ETL on the raw data to produce a clean, enriched, and analysis-ready dataset can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/scripts).
 > 
 > The SQL queries utilized to inspect and perform quality checks (performed in Silver and Gold Layer) can be found [here](https://github.com/KLinh62/SQL-Data-Warehouse-Project/tree/main/tests).
 > 
